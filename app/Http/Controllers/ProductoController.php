@@ -39,7 +39,7 @@ class ProductoController extends Controller
         $marcas = marca::get();
         $colores = color::all();
         // dd($categorias->isEmpty());
-        return view('VistaProductos.create', compact('categorias','marcas','tallas','colores'));
+        return view('VistaProductos.create', compact('categorias','marcas','colores'));
     }
 
     /**
